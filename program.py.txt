@@ -1,0 +1,33 @@
+def add():
+  
+  a,b=[int(x) for x in input("Enter the two numbers:").split()]
+  print(a+b)
+
+def substract():
+  a,b=[int(x) for x in input("Enter the two operand:").split()]
+  print(a-b)
+def multiply():
+  a,b=[int(x) for x in input("Enter the two operand:").split()]
+  print(a*b)
+
+def exponent():
+  a,b=[int(x) for x in input("Enter the two operand:").split()]
+  print(a**b)
+
+print("Enter 1.add,2.substracrt,3. multiply,4. exponent")
+
+ch='y'
+while(ch=='y'):
+  c=int(input("enter the choice"))
+  if c==1:
+    add()
+
+  if c==2:
+    substract()
+
+  if c==3:
+    multiply()
+
+  if c==4:
+    exponent()
+  ch=input("do you want to continiue? (y/n)")
